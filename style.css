@@ -47,6 +47,8 @@
 
 .layer1{
     background-image: url("./images/layered-waves-haikei\ \(2\).svg");
+    /* background-image: url("./images/layered-waves-haikei\ \(7\).svg"); */
+
 }
 
 .layer2{
@@ -55,6 +57,9 @@
 
 .layer3{
     background-image: url("./images/layered-waves-haikei\ \(6\).svg");
+}
+.layer4{
+    background-image: url("./images/layered-waves-haikei\ \(10\).svg");
 }
 .order{
         /* height: 400vh;
@@ -82,4 +87,64 @@
 #name-input{
     height: 50px;
     border-radius: 25px;
+}
+
+#email-input{
+    height: 50px;
+    border-radius: 25px;
+
+}
+
+#rsvp{
+    color: 
+    #bb2590;
+    font-weight: bold;
+}
+
+#fill-the-form{
+    color: white;
+    font-weight: bold
+}
+
+#attending-input{
+    height: 50px;
+    border-radius: 25px;
+}
+
+#send-button{
+    
+    font-weight:bold;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color:#d577ba;
+    border-color: white;
+}
+
+#send-button:hover{
+    transform: translateY(-3px) scale(1.02);
+
+}
+
+.registry{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgb(193,41,143),rgb(235,99,131), rgb(152,67,153), rgb(169,102,170),rgb(172,50,144) );
+}
+#registry-color{
+    color:
+    #41bbb9;
+    font-weight: bold;
+}
+
+#registry-link{
+    color: white;
+    font-weight: bold;
+}
+
+#click-here:hover{
+    cursor: pointer;
 }
