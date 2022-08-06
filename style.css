@@ -1,4 +1,11 @@
+@font-face {
+    font-family:"Capuche" ;
+    src: url("./fonts/Capuche\ Trial.otf");
+}
 
+*{
+    font-family: "Capuche";
+}
 .main{
     background: linear-gradient(rgb(220,196,36), rgb(228,88,112),rgb(63,187,186),rgb(149,184,66) );
     height: 20%;
@@ -10,7 +17,18 @@
     position: relative;
 }
 
-
+#date{
+    color: 
+    #eeba3f;
+}
+#time{
+    color: white;
+}
+#order{
+    color: 
+    #ea4760;
+    /* font-size: 100px; */
+}
  .location-container{
     background: linear-gradient(rgb(227,26,90),rgb(237,71,87), rgb(189,39,78) );
     
@@ -46,13 +64,13 @@
 
 
 .layer1{
-    background-image: url("./images/layered-waves-haikei\ \(2\).svg");
+    background-image: url("./images/layered-waves-haikei\ \(11\).svg");
     /* background-image: url("./images/layered-waves-haikei\ \(7\).svg"); */
 
 }
 
 .layer2{
-    background-image: url("./images/layered-waves-haikei\ \(5\).svg")
+    background-image: url("./images/layered-waves-haikei\ \(12\).svg")
 }
 
 .layer3{
@@ -138,6 +156,7 @@
     color:
     #41bbb9;
     font-weight: bold;
+    padding-top: 150px;
 }
 
 #registry-link{
