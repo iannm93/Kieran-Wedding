@@ -62,6 +62,11 @@
     background-size: cover;
 }
 
+#blenny{
+    font-family: blenny, sans-serif !important;
+font-style: normal;
+font-weight: 900;
+}
 
 .layer1{
     background-image: url("./images/layered-waves-haikei\ \(11\).svg");
@@ -103,16 +108,32 @@
 }
 
 #name-input{
+    font-family: blenny, sans-serif;
+
+font-weight: 900;
+
+font-style: normal;
     height: 50px;
     border-radius: 25px;
 }
 
 #email-input{
+    font-family: blenny, sans-serif;
+
+font-weight: 900;
+
+font-style: normal;
     height: 50px;
     border-radius: 25px;
 
 }
+#make-it{
+    font-family: blenny, sans-serif;
 
+font-weight: 900;
+
+font-style: normal;
+}
 #rsvp{
     color: 
     #bb2590;
