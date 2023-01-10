@@ -19,6 +19,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://use.typekit.net/xrz6jkg.css">
     <link href="style.css" rel="stylesheet" />
     <title>Kieran & Corrado</title>
   </head>
@@ -67,23 +68,23 @@
       <div class="form-for-wedding pt-5">
         <h1 class="text-center  display-1" id="rsvp">RSVP</h1>
         <div class="text-center display-5" id="fill-the-form"> Please fill the form below</div>
-        <form id="form" action="" class="pt-5">
+        <form id="form" action="https://formspree.io/f/xbjbjlrn" method="POST" class="pt-5">
        
           
-          <input  placeholder="Name"id = "name-input"name="name" type="text" class="mb-5 form-control"/>
+          <input  placeholder="Name"id = "name-input"name="name" type="text" class="mb-5 form-control" required/>
   
 
-          <input placeholder="Email"id = "email-input"name="email" type="email" class="mb-5 form-control"/>
-          <select id ="attending-input"class="form-select" aria-label="Default select example">
-            <option selected>Can you make it?</option>
-            <option name="no" value="1">No</option>
-            <option name="yes" value="2">Yes</option>
+          <input placeholder="Email"id = "email-input"name="email" type="email" class="mb-5 form-control" required/>
+          <select name="can you make it?"id ="attending-input"class="form-select" aria-label="Default select example" required>
+            <option name="make-it"id ="make-it"selected>Can you make it?</option>
+            <option name="no" value="no">No</option>
+            <option name="yes" value="yes">Yes</option>
             
           </select>
+          <div class="mt-5 d-flex justify-content-center">
+            <button type="submit" id="send-button"> Send </button>
+          </div>
         </form>
-        <div class="mt-5 d-flex justify-content-center">
-          <button id="send-button"> send </button>
-        </div>
         <br>
         <br>
         

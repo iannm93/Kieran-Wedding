@@ -1,6 +1,6 @@
 let clickHere = document.getElementById("click-here")
 let windowDirect=()=>{
-    window.open("https://getbootstrap.com/docs/5.1/getting-started/introduction/")
+    window.open("https://www.google.com")
 }
 
 clickHere.addEventListener("click", windowDirect)
