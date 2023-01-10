@@ -1,28 +1,82 @@
 @font-face {
     font-family:"Capuche" ;
     src: url("./fonts/Capuche\ Trial.otf");
+    font-family: 'Source Serif Pro', serif;
 }
 
-*{
+h1{
     font-family: "Capuche";
+}
+
+h2{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+    font-size: medium;
+
+}
+h4{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+}
+
+h6{
+    color:#ea4760;
+}
+
+em{
+    color: white;
+}
+a{
+    font-weight: 900;
+    color: #ea4760;
+    padding-bottom: 150px;
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: none;
+}
+a:hover{
+    color: #eeba3f;
+    transform: scale(1.2);
+
 }
 .main{
     background: linear-gradient(rgb(220,196,36), rgb(228,88,112),rgb(63,187,186),rgb(149,184,66) );
-    height: 20%;
+    height: 15%;
     /* background-size: contain; */
     /* height: 400vh;
     width: 100%; */
     /* height: 5%; */
     width: 100%;
     position: relative;
+    
 }
-
+#here:hover{
+    transform: scale(1.04);
+}
 #date{
     color: 
     #eeba3f;
+    font-weight: 700;
+    padding: 50px;
 }
 #time{
+    padding-left: 150px;
+    padding-right: 150px;
+    font-weight: 900;
     color: white;
+}
+#info{
+    font-weight: 900;
+    color: #ea4760;
+    padding-bottom: 150px;
+    font-family: 'Source Serif Pro', serif;
+}
+#info:hover{
+    transform: scale(1.02);
+}
+#ressy{
+    font-weight: 100;
+    color: white;
+    padding-bottom: 20px;
 }
 #order{
     color: 
@@ -105,11 +159,13 @@
 #name-input{
     height: 50px;
     border-radius: 25px;
+    font-family: 'Source Serif Pro', serif;
 }
 
 #email-input{
     height: 50px;
     border-radius: 25px;
+    font-family: 'Source Serif Pro', serif;
 
 }
 
@@ -121,16 +177,18 @@
 
 #fill-the-form{
     color: white;
-    font-weight: bold
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
 }
 
 #attending-input{
     height: 50px;
     border-radius: 25px;
+    font-family: 'Source Serif Pro', serif;
 }
 
 #send-button{
-    
+    font-family: 'Source Serif Pro', serif;
     font-weight:bold;
     font-size: 20px;
     width: 100px;
@@ -156,7 +214,7 @@
     color:
     #41bbb9;
     font-weight: bold;
-    padding-top: 150px;
+    padding-top: 115px;
 }
 
 #registry-link{
