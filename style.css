@@ -242,7 +242,7 @@ font-style: normal;
     height: 100%;
     width: 100%;
     position: relative;
-    background: linear-gradient(rgb(193,41,143),rgb(235,99,131), rgb(152,67,153), rgb(169,102,170),rgb(172,50,144) );
+    background: linear-gradient(rgb(193,41,143), rgb(152,67,153), rgb(169,102,170),rgb(172,50,144) );
 }
 #registry-color{
     color:
