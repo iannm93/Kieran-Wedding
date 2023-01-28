@@ -64,6 +64,19 @@ a:hover{
     font-weight: 900;
     color: white;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 500px){
+    #date{
+        padding:10px;
+    }
+    #time{
+        padding: 0px 10px 0px 10px;
+    }
+}
 #info{
     font-weight: 900;
     color: #ea4760;
