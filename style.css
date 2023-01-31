@@ -259,3 +259,17 @@ font-style: normal;
 #click-here:hover{
     cursor: pointer;
 }
+
+#rsvp-link{
+    color: #bb2590;
+}
+#rsvp-link:hover {
+    color: rgb(237,71,87) !important;
+}
+
+#reg{
+    color:  #41bbb9 !important;
+}
+#reg:hover{
+    color: rgb(238,186,29) !important;
+}
