@@ -279,6 +279,8 @@ font-style: normal;
 *::-webkit-scrollbar {
     width: 2px;
     height: 5px;
+    background: linear-gradient( #cf6372,#eb9747,
+    #e3b33b)
     
   }
 
