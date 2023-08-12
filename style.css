@@ -284,7 +284,7 @@ font-style: normal;
 
   *::-webkit-scrollbar-track {
     /* background: #4a4a46 */
-    background-color: black;
+    background-color: transparent;
 
   }
 
@@ -308,7 +308,9 @@ font-style: normal;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
-    background-color: yellow;
+    /* background-color: #cf6372; */
+    background: linear-gradient( #cf6372,#eb9747,
+    #e3b33b);
   }
   #img-target > * {
       scroll-snap-align: center;
@@ -317,9 +319,12 @@ font-style: normal;
     /* margin: 2rem; */
   }
   #gallery2 {
-    background-color: black;
-   min-height: 800px;
-    width: 100%;
+    /* background-color: black; */
+   min-height: 500px;
+    /* max-width: 100%; */
+    /* background-color: #cf6372; */
+    background: linear-gradient( #cf6372,#eb9747,
+    #e3b33b);
     
   }
   #small-text{
@@ -329,12 +334,14 @@ font-style: normal;
     height: 300px;
   }
   .card {
-    background-color: black;
+    /* background-color: #cf6372; */
+    background: linear-gradient( #cf6372,#eb9747,
+    #e3b33b);
     color: white;
   }
   
   #specific-image:hover{
-      cursor: url("./img/pizza_mouse_hover.png") 16 0,auto;
+      /* cursor: url("./img/pizza_mouse_hover.png") 16 0,auto; */
   
       transform: translateY(-3px) scale(1.1);
       transition: ease-in .5s;
