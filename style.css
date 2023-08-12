@@ -361,9 +361,9 @@ font-style: normal;
 
 img:hover{
     cursor: pointer;
-    transform: translateY(-5px);
+    /* transform: translateY(-5px);
     border-radius: 15px;
-    transition: all .4s;
+    transition: all .4s; */
 }
 
   /* Style the Image Used to Trigger the Modal */
@@ -474,11 +474,11 @@ img:hover{
   @media only screen and (max-width: 500px){
     
     .bigger-card{
-        width: 23rem !important;
+        width: 21.5rem !important;
     }
 
     .smaller-card{
-        width: 10.5rem !important;
+        width: 10rem !important;
     }
   }
 
