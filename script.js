@@ -6,13 +6,13 @@ let my = document.querySelector(".myImg");
 let arr = [1,2]
 let modalShow = (obj, event, modalC, modal, cards) => {
   let image_src = event.target.src
-  (image_src)
-  (obj[0].link)
+  
+  
   for (let i = 0; i < 72; i++){
     // (image_src, obj[i].link)
     if (image_src.includes(obj[i].id)){
-      (image_src)
-      (obj[i].link)
+      
+      
       window.open("https://i.imgur.com/" + obj[i].id)
       // window.open(image_src + ".jpg")
     }
