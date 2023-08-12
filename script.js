@@ -6,48 +6,48 @@ let my = document.querySelector(".myImg");
 let arr = [1,2]
 let modalShow = (obj, event, modalC, modal, cards) => {
   let image_src = event.target.src
-  console.log(image_src)
-  console.log(obj[0].link)
+  (image_src)
+  (obj[0].link)
   for (let i = 0; i < 72; i++){
-    // console.log(image_src, obj[i].link)
+    // (image_src, obj[i].link)
     if (image_src.includes(obj[i].id)){
-      console.log(image_src)
-      console.log(obj[i].link)
+      (image_src)
+      (obj[i].link)
       window.open("https://i.imgur.com/" + obj[i].id)
       // window.open(image_src + ".jpg")
     }
 
   }
 
-  // console.log(event.target)
+  // (event.target)
   // let target = event.target.src;
   // for (let i = 0; i < obj.length; i++) {
   //   if (event.target.textContent === "×") {
   //     modalC[i].style.display = "none";
   //     modal[i].style.display = "none";
 
-  //     console.log(modal[0].style.display)
-  //     console.log(modalC[i].style.display)
+  //     (modal[0].style.display)
+  //     (modalC[i].style.display)
 
   //     return;
   //   }
-  //   console.log(event.target.attributes[1].nodeValue);
+  //   (event.target.attributes[1].nodeValue);
   //   else if (target.includes(obj[i].link)) {
-  //     console.log(i);
-  //     console.log(cards[i]);
-  //     console.log(event.target.attributes[1].nodeValue);
+  //     (i);
+  //     (cards[i]);
+  //     (event.target.attributes[1].nodeValue);
   //     if (cards[i].style.width === "15.65rem") {
   //       modalC[i].style.width = "60%";
   //     }
-  //     console.log(i);
-  //     console.log(modalC[i]);
-  //     console.log(modalC[i]);
+  //     (i);
+  //     (modalC[i]);
+  //     (modalC[i]);
 
   //     modalC[i].src = event.target.src;
   //     modal[i].style.display = "block";
   //   }
   //   if(event.target.atrributes.includes("closed")){
-  //     console.log("test")
+  //     ("test")
   //     modal[i].style.display = "none";
   //   }
   // }
@@ -67,23 +67,23 @@ let api_controller = async () =>{
     
     let response = await data.json();
     let obj = response.data.images;
-    console.log(obj[1].link)
+    (obj[1].link)
     for (let i = 0; i < obj.length; i++) {
       // response.data.images[i].id += "s"
       
   JSON.stringify(obj[i].link)
   
-  // console.log(obj[i].link)
+  // (obj[i].link)
   let starts = []
-  // console.log(obj.length)
+  // (obj.length)
   for(let j = 0; j< obj.length; j++){
-    // console.log(j)
+    // (j)
     let new_link = obj[j].link.substring(0,obj[j].link.length -4)
     starts.push(new_link)
     starts[j] += "h.jpg"
-    // console.log(starts[j], j)
+    // (starts[j], j)
   }
-  // console.log(starts)
+  // (starts)
 
       if (
         i === 0 ||
@@ -136,9 +136,9 @@ let api_controller = async () =>{
         </div>
         `;
         //  let cards = document.querySelectorAll(".card")
-        //  console.log(cards)
+        //  (cards)
         //  cards.forEach(card=>{
-          //   console.log(card)
+          //   (card)
           //   card.style.width ="200px !important"
           //  })
           allHtml.push(html2);
@@ -151,7 +151,7 @@ let api_controller = async () =>{
       let modalC = document.querySelectorAll(".modal-content");
       let modal = document.querySelectorAll(".modal");
       let cards = document.querySelectorAll(".card");
-      console.log(obj)
+      (obj)
       eventTar.addEventListener("click", (event)=>{
         let obj = response.data.images
         modalShow(obj, event)
