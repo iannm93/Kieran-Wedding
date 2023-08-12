@@ -338,6 +338,7 @@ font-style: normal;
     background: linear-gradient( #cf6372,#eb9747,
     #e3b33b);
     color: white;
+    border: 5px white solid;
   }
   
   #specific-image:hover{
@@ -402,7 +403,9 @@ img:hover{
     width: 80% !important;
     max-width: 1000px;
   }
-  
+  img{
+    border: none;
+  }
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
   #caption {
     margin: auto;
@@ -444,11 +447,38 @@ img:hover{
     cursor: pointer;
   }
   
+ 
   /* 100% Image Width on Smaller Screens */
+   @media only screen and (max-width: 1000px){
+    
+    .bigger-card{
+        width: 35rem !important;
+    }
+
+    .smaller-card{
+        width: 15.85rem !important;
+    }
+  }
+ 
   @media only screen and (max-width: 700px){
     
     .bigger-card{
-        width: 21rem !important;
+        width: 28rem !important;
+    }
+
+    .smaller-card{
+        width: 12.61rem !important;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    
+    .bigger-card{
+        width: 24rem !important;
+    }
+
+    .smaller-card{
+        width: 11rem !important;
     }
   }
 

@@ -120,7 +120,7 @@ let api_controller = async () =>{
       i === 50
       ) {
         let html = `         
-        <div id="card" class="card" style="width: 26rem;">
+        <div id="card" class="smaller-card card" style="width: 26.4rem;">
         
         <img class="specific-image" src="${starts[i]} " class="card-img-top" alt="...">
 
