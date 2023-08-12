@@ -12,7 +12,7 @@ let modalShow = (obj, event, modalC, modal, cards) => {
     console.log(image_src, obj[i].link)
     if (image_src.includes(obj[i].id)){
 
-      window.open(image_src)
+      window.open(image_src + ".jpg")
     }
 
   }
