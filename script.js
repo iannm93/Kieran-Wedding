@@ -9,10 +9,12 @@ let modalShow = (obj, event, modalC, modal, cards) => {
   console.log(image_src)
   console.log(obj[0].link)
   for (let i = 0; i < 72; i++){
-    console.log(image_src, obj[i].link)
+    // console.log(image_src, obj[i].link)
     if (image_src.includes(obj[i].id)){
-
-      window.open(image_src + ".jpg")
+      console.log(image_src)
+      console.log(obj[i].link)
+      window.open("https://i.imgur.com/" + obj[i].id)
+      // window.open(image_src + ".jpg")
     }
 
   }
