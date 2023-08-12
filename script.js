@@ -3,15 +3,17 @@ let allHtml = [];
 let specImg = document.getElementById("specific-image");
 let si = document.querySelector(".img-target .specific-image");
 let my = document.querySelector(".myImg");
-
+let arr = [1,2]
 let modalShow = (obj, event, modalC, modal, cards) => {
   let image_src = event.target.src
   console.log(image_src)
   console.log(obj[0].link)
-  for (let i = 0; i < obj.length; i++){
-    
-    if (image_src === obj[i].link)
-    window.open(image_src)
+  for (let i = 0; i < 72; i++){
+    console.log(image_src, obj[i].link)
+    if (image_src.includes(obj[i].id)){
+
+      window.open(image_src)
+    }
 
   }
 
@@ -65,6 +67,22 @@ let api_controller = async () =>{
     let obj = response.data.images;
     console.log(obj[1].link)
     for (let i = 0; i < obj.length; i++) {
+      // response.data.images[i].id += "s"
+      
+  JSON.stringify(obj[i].link)
+  
+  // console.log(obj[i].link)
+  let starts = []
+  // console.log(obj.length)
+  for(let j = 0; j< obj.length; j++){
+    // console.log(j)
+    let new_link = obj[j].link.substring(0,obj[j].link.length -4)
+    starts.push(new_link)
+    starts[j] += "h.jpg"
+    // console.log(starts[j], j)
+  }
+  // console.log(starts)
+
       if (
         i === 0 ||
         i === 4 ||
@@ -102,7 +120,7 @@ let api_controller = async () =>{
         let html = `         
         <div id="card" class="card" style="width: 26rem;">
         
-        <img class="specific-image" src="${obj[i].link}" class="card-img-top" alt="...">
+        <img class="specific-image" src="${starts[i]} " class="card-img-top" alt="...">
 
         </div>
         `;
@@ -111,7 +129,7 @@ let api_controller = async () =>{
         let html2 = `         
         <div id="card" class="card bigger-card" style="width: 58.5rem;">
         
-        <img class="specific-image" src="${obj[i].link}" class="card-img-top" alt="...">
+        <img class="specific-image" src="${starts[i]}" class="card-img-top" alt="...">
 
         </div>
         `;
