@@ -126,7 +126,7 @@ let api_controller = async () =>{
 
         </div>
         `;
-        allHtml.push(html);
+        allHtml+=html;
       } else {
         let html2 = `         
         <div id="card" class="card bigger-card" style="width: 58.5rem;">
@@ -141,7 +141,7 @@ let api_controller = async () =>{
           //   (card)
           //   card.style.width ="200px !important"
           //  })
-          allHtml.push(html2);
+          allHtml+=html2;
         }
         eventTar.innerHTML = allHtml;
         
