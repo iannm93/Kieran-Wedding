@@ -303,7 +303,7 @@ font-style: normal;
 
     gap: .8rem;
    display: grid;
-    grid-auto-flow: column; 
+    grid-auto-flow: row; 
     /* scroll-behavior: smooth; */
   
     /* grid-template-columns: 25%; */
